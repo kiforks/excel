@@ -1,0 +1,53 @@
+@mixin reset-list {
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style: none;
+}
+
+@mixin reset-margin-text {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@mixin reset-fieldset {
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@mixin reset-quote {
+	margin: 0;
+	quotes: none;
+}
+
+@mixin reset-button {
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+}
+
+@mixin reset-input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: inherit;
+	text-decoration: none;
+}
+
+@mixin reset-center-transform {
+	top: 0;
+	left: 0;
+	transform: translate(0, 0);
+}
+
+@mixin reset-center-transform-vertical {
+	top: 0;
+	transform: translateY(0);
+}
+
+@mixin reset-center-transform-horizon {
+	left: 0;
+	transform: translateX(0);
+}

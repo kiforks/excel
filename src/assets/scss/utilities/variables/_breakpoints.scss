@@ -1,0 +1,34 @@
+/**
+ * Media queries breakpoints
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Description:
+ * Define the breakpoints at which your layout will
+ * change, adapting to different screen sizes.
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+/* Default */
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1200px !default;
+$screen-xxl: 1400px !default;
+
+/* Mobile first */
+/* ≥768px */
+$screen-md-min: $screen-md !default;
+/* ≥992px */
+$screen-lg-min: $screen-lg !default;
+/* ≥1200px */
+$screen-xl-min: $screen-xl !default;
+/* ≥1400px */
+$screen-xxl-min: $screen-xxl !default;
+
+/* Desktop first */
+/* <768px */
+$screen-sm-max: ($screen-md - 1) !default;
+/* <992px */
+$screen-md-max: ($screen-lg - 1) !default;
+/* <1200px */
+$screen-lg-max: ($screen-xl - 1) !default;
+/* <1400px */
+$screen-xl-max: ($screen-xxl - 1) !default;

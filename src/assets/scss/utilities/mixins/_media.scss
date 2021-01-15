@@ -1,0 +1,121 @@
+/**
+ * Mobile-first
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Description:
+ * Min-width
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+/* ≥768px */
+@mixin screen-md-min {
+	@media (min-width: $screen-md-min) {
+		@content;
+	}
+}
+
+/* ≥992px */
+@mixin screen-lg-min {
+	@media (min-width: $screen-lg-min) {
+		@content;
+	}
+}
+
+/* ≥1200px */
+@mixin screen-xl-min {
+	@media (min-width: $screen-xl-min) {
+		@content;
+	}
+}
+
+/* ≥1400px */
+@mixin screen-xxl-min {
+	@media (min-width: $screen-xxl-min) {
+		@content;
+	}
+}
+
+/**
+ * Desktop-first
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Description:
+ * Max-width
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+/* <768px */
+@mixin screen-sm-max {
+	@media (min-width: $screen-sm-max) {
+		@content;
+	}
+}
+
+/* <992px */
+@mixin screen-md-max {
+	@media (min-width: $screen-md-max) {
+		@content;
+	}
+}
+
+/* <1200px */
+@mixin screen-lg-max {
+	@media (min-width: $screen-lg-max) {
+		@content;
+	}
+}
+
+/* <1400px */
+@mixin screen-xl-max {
+	@media (min-width: $screen-xl-max) {
+		@content;
+	}
+}
+
+/**
+ * Min-max
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Description:
+ * From min-width to max-width
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+/* ≥768px and <992px */
+@mixin screen-md-lg {
+	@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+		@content;
+	}
+}
+
+/* ≥768px and <1200px */
+@mixin screen-md-xl {
+	@media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+		@content;
+	}
+}
+
+/* ≥768px and <1400px */
+@mixin screen-md-xxl {
+	@media (min-width: $screen-md-min) and (max-width: $screen-xl-max) {
+		@content;
+	}
+}
+
+/* ≥992px and <1200px */
+@mixin screen-lg-xl {
+	@media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+		@content;
+	}
+}
+
+/* ≥992px and <1400px */
+@mixin screen-lg-xxl {
+	@media (min-width: $screen-lg-min) and (max-width: $screen-xl-max) {
+		@content;
+	}
+}
+
+/* ≥1200x and <1400px */
+@mixin screen-xl-xxl {
+	@media (min-width: $screen-xl-min) and (max-width: $screen-xl-max) {
+		@content;
+	}
+}

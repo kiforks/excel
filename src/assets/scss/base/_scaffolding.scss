@@ -1,0 +1,19 @@
+@import '~normalize.css';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 100%;
+	min-height: 100vh;
+	font-family: $font-family-roboto, 'Arial', sans-serif;
+	font-size: 12px;
+	line-height: 1.2;
+
+	p {
+		color: $font-family-roboto;
+	}
+}
