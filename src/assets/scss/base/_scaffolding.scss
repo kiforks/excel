@@ -1,4 +1,4 @@
-@import '~normalize.css';
+@import '~normalize.css/normalize.css';
 
 * {
 	box-sizing: border-box;
@@ -7,13 +7,20 @@
 }
 
 body {
+	position: relative;
+	min-width: 320px;
 	max-width: 100%;
-	min-height: 100vh;
-	font-family: $font-family-roboto, 'Arial', sans-serif;
-	font-size: 12px;
+	background-color: $color-white;
+	color: $color-black;
+	font-family: $font-family-roboto, $sans-serif;
+	font-size: 16px;
 	line-height: 1.2;
-
-	p {
-		color: $font-family-roboto;
-	}
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-feature-settings: 'kern' 1;
+	-moz-font-feature-settings: 'kern' 1;
 }
