@@ -1,4 +1,18 @@
 /**
+ * Retina
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Description:
+ * x2 retina
+ * - - - - - - - - - - - - - - - - - - - - - - - - -
+ */
+
+@mixin retina {
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		@content;
+	}
+}
+
+/**
  * Mobile-first
  * - - - - - - - - - - - - - - - - - - - - - - - - -
  * Description:

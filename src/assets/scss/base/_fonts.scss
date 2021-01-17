@@ -1,6 +1,6 @@
 /*
 *  param: font-name, font-path, font-weight, font-style
-* _____________________________________________________________________
+* ____________________
 *  Example:
 *  @include font-face('OpenSans', '../fonts/OpenSans', bold, normal);
 */
@@ -17,3 +17,4 @@
 @include font-face($font-family-roboto, '../fonts/Roboto-BoldItalic', 700, italic);
 @include font-face($font-family-roboto, '../fonts/Roboto-Black', 800);
 @include font-face($font-family-roboto, '../fonts/Roboto-BlackItalic', 800, italic);
+@include font-face($font-family-material-icons, '../fonts/MaterialIcons-Regular');

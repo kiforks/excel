@@ -255,8 +255,6 @@
 		],
 		"order/order": [
 			"dollar-variables",
-			"custom-properties",
-			"declarations",
 			{
 				"type": "at-rule",
 				"name": "extend"
@@ -335,6 +333,8 @@
 				"name": "include",
 				"parameter": "before-after-active"
 			},
+			"custom-properties",
+			"declarations",
 			{
 				"type": "rule",
 				"selector": "^&:first"

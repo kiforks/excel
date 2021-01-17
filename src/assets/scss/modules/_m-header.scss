@@ -1,0 +1,29 @@
+.m-header {
+	@include flex-between;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $height-header;
+	padding: 8px 4px 0;
+
+	.m-input {
+		min-width: 1px;
+		height: 20px;
+		margin: 0;
+		padding: 2px 7px 4px;
+		border-radius: 2px;
+		color: $color-black;
+		line-height: 1;
+		outline: 1px solid transparent;
+		transition: all $transition-duration ease-in-out;
+
+		&:hover {
+			outline: 1px solid $color-border-hover;
+		}
+
+		&:focus {
+			outline: 2px solid $color-green-focus;
+		}
+	}
+}

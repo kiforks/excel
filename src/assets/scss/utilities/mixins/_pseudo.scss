@@ -40,10 +40,9 @@
 }
 
 @mixin focus-opacity {
-	transition: opacity $transition-duration ease-in-out;
-
 	@include hover-opacity;
 	@include active-opacity;
+	transition: opacity $transition-duration ease-in-out;
 }
 
 @mixin focus-scale($focus-scale: $hover-scale, $active-scale: $active-scale) {
@@ -96,13 +95,24 @@
 }
 
 @mixin focus-fill($fill: $color-black) {
-	transition: fill $transition-duration ease-in-out, opacity $transition-duration ease-in-out;
-
 	@include active-opacity;
+	transition: fill $transition-duration ease-in-out, opacity $transition-duration ease-in-out;
 
 	&:hover,
 	&:focus {
 		fill: $fill;
+	}
+}
+
+@mixin focus-background($color: $color-background-hover) {
+	@include hover {
+		background-color: $color;
+	}
+	transition: all $transition-duration ease-in-out;
+
+	&:active {
+		opacity: 0.75;
+		color: $color-green-focus;
 	}
 }
 

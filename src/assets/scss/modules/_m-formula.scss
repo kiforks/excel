@@ -1,0 +1,29 @@
+.m-formula {
+	display: flex;
+	position: absolute;
+	top: $height-header + $height-toolbar;
+	left: 0;
+	align-items: center;
+	width: 100%;
+	height: $height-formula;
+	border-bottom: 1px solid $color-border;
+
+	.info {
+		@include center-flex;
+		@include reset-margin-text;
+		min-width: $width-info-cell;
+		height: 100%;
+		border-right: 1px solid $color-border;
+		color: $color-gray-info-cell;
+		font-size: 18px;
+		font-style: italic;
+	}
+
+	.m-input {
+		flex-grow: 1;
+		height: 100%;
+		padding: 4px;
+		color: $color-black;
+		font-size: 14px;
+	}
+}

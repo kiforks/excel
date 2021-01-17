@@ -1,0 +1,11 @@
+.m-toolbar {
+	display: flex;
+	position: absolute;
+	top: $height-header;
+	left: 0;
+	width: 100%;
+	height: $height-toolbar;
+	padding: 7px 10px;
+	border-top: 1px solid $color-border;
+	border-bottom: 1px solid $color-border;
+}

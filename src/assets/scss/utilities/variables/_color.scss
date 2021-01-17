@@ -1,2 +1,17 @@
-$color-white: #ffffff;
-$color-black: #000000;
+/* Main */
+$color-white: #ffffff !default;
+$color-black: #202124 !default;
+$color-border: #e0e0e0 !default;
+$color-border-light: #eaeaea !default;
+$color-border-hover: #d7d7d7 !default;
+$color-background-hover: #e2e2e2 !default;
+$color-gray-info-cell: #b3b3b3 !default;
+$color-green-focus: #007e00 !default;
+
+/* m-header */
+$color-gray-header: #818181 !default;
+
+/* m-table */
+$color-gray-row-info: #f8f9fa;
+$color-gray-cell: #111111;
+$color-blue-selected: #3b3bfd;

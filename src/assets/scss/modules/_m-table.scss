@@ -1,0 +1,55 @@
+.m-table {
+	position: absolute;
+	top: $height-header + $height-toolbar + $height-formula;
+	left: 0;
+	overflow-x: auto;
+	width: 100%;
+	padding-bottom: 2px;
+
+	.row {
+		display: flex;
+		height: $height-row;
+	}
+
+	.row-info {
+		@include center-flex;
+		min-width: $width-info-cell;
+		height: 100%;
+		border: 1px solid $color-border;
+		border-top: 0;
+		background-color: $color-gray-row-info;
+	}
+
+	.row-data {
+		display: flex;
+	}
+
+	.column {
+		@include center-flex;
+		width: $width-cell;
+		height: 100%;
+		border: 1px solid $color-border;
+		border-top: 0;
+		border-left: 0;
+		background-color: $color-gray-row-info;
+	}
+
+	.cell {
+		width: $width-cell;
+		height: 100%;
+		padding: 2px 5px;
+		border: 1px solid $color-border-light;
+		border-top: 0;
+		border-left: 0;
+		color: $color-gray-cell;
+		line-height: 0;
+		text-align: center;
+		white-space: nowrap;
+
+		&.selected {
+			z-index: 2;
+			border: 0;
+			outline: 2px solid $color-blue-selected;
+		}
+	}
+}
