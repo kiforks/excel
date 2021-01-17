@@ -12,6 +12,11 @@ $color-green-focus: #007e00 !default;
 $color-gray-header: #818181 !default;
 
 /* m-table */
-$color-gray-row-info: #f8f9fa;
-$color-gray-cell: #111111;
-$color-blue-selected: #3b3bfd;
+$color-gray-row-info: #f8f9fa !default;
+$color-gray-cell: #111111 !default;
+$color-blue-selected: #3b3bfd !default;
+
+/* m-dashboard-table */
+$color-gray-db: #dadce0;
+$color-black-db: #202124;
+$color-gray-db-bg: #e2f4ea;

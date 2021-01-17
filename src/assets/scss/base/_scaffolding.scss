@@ -25,3 +25,13 @@ body {
 	-webkit-font-feature-settings: 'kern' 1;
 	-moz-font-feature-settings: 'kern' 1;
 }
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+}

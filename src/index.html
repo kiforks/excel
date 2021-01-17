@@ -9,85 +9,38 @@
 </head>
 <body>
 	<div id="app" class="container">
-		<header class="m-header">
-			<h1 class="s-visually-hidden">Excel таблица</h1>
-			<label for="input-table" class="s-visually-hidden">Новая таблица</label>
-			<input type="text" class="m-input" value="Новая таблица" id="input-table">
-			<div class="buttons">
-				<button class="m-button material-icons">
-					delete
-				</button>
-				<button class="m-button material-icons" type="button">
-					exit_to_app
-				</button>
-			</div>
-		</header>
-		<section class="m-toolbar">
-			<h2 class="s-visually-hidden">Панель инструментов</h2>
-			<button class="m-button material-icons">
-				format_align_left
-			</button>
-			<button class="m-button material-icons">
-				format_align_center
-			</button>
-			<button class="m-button material-icons">
-				format_align_right
-			</button>
-			<button class="m-button material-icons">
-				format_bold
-			</button>
-			<button class="m-button material-icons">
-				format_italic
-			</button>
-			<button class="m-button material-icons">
-				format_underline
-			</button>
-		</section>
-		<section class="m-formula">
-			<h2 class="s-visually-hidden">Формула</h2>
-			<p class="info">fx</p>
-			<label class="s-visually-hidden" for="formula-input">Введите формулу</label>
-			<input class="m-input" type="text" id="formula-input">
-		</section>
-		<section class="m-table">
-			<h2 class="s-visually-hidden">Таблица</h2>
-			<div class="row">
-				<div class="row-info">
+		<div class="dashboard">
+			<div class="m-dashboard-table">
+				<header class="header">
+					<h1>Excel Dashboard</h1>
+				</header>
+				<section class="new">
+					<h2 class="s-visually-hidden">Новая таблица</h2>
+					<div class="view">
+						<a href="#" class="create">
+							Новая <br> таблица
+						</a>
+					</div>
+				</section>
+				<section class="table view">
+					<div class="list-header">
+						<span>Название</span>
+						<span>Дата открытия</span>
+					</div>
 
-				</div>
-				<div class="row-data">
-					<div class="column">
-						A
-					</div>
-					<div class="column">
-						B
-					</div>
-					<div class="column">
-						C
-					</div>
-				</div>
+					<ul class="list">
+						<li class="record">
+							<a href="#">Таблица номер 1</a>
+							<strong>12.06.2020</strong>
+						</li>
+						<li class="record">
+							<a href="#">Таблица номер 2</a>
+							<strong>12.06.2020</strong>
+						</li>
+					</ul>
+				</section>
 			</div>
-			<div class="row">
-				<div class="row-info">
-					1
-				</div>
-				<div class="row-data">
-					<input type="text" class="cell selected" value="A1">
-					<input type="text" class="cell" value="B2">
-					<input type="text" class="cell " value="C3">
-				</div>
-			</div>
-			<div class="row">
-				<div class="row-info">
-					2
-				</div>
-				<div class="row-data">
-					<input type="text" class="cell" value="A1">
-					<input type="text" class="cell" value="B2">
-					<input type="text" class="cell " value="C3">
-				</div>
-			</div>
-		</section>
+		</div>
 	</div>
 </body>
 </html>

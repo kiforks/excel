@@ -1,8 +1,8 @@
 .m-formula {
-	display: flex;
 	position: absolute;
 	top: $height-header + $height-toolbar;
 	left: 0;
+	display: flex;
 	align-items: center;
 	width: 100%;
 	height: $height-formula;
