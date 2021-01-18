@@ -1,0 +1,248 @@
+/* Hover & active */
+@mixin hover {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+@mixin hover-opacity {
+	&:hover,
+	&:focus {
+		opacity: $hover-opacity;
+	}
+}
+
+@mixin hover-scale($scale: $hover-scale) {
+	&:hover,
+	&:focus {
+		transform: scale($scale);
+	}
+}
+
+@mixin active {
+	&:active {
+		@content;
+	}
+}
+
+@mixin active-opacity {
+	&:active {
+		opacity: $active-opacity;
+	}
+}
+
+@mixin active-scale($scale: $active-scale) {
+	&:active {
+		opacity: $active-opacity;
+		transform: scale($scale);
+	}
+}
+
+@mixin focus-opacity {
+	@include hover-opacity;
+	@include active-opacity;
+	transition: opacity $transition-duration ease-in-out;
+}
+
+@mixin focus-scale($focus-scale: $hover-scale, $active-scale: $active-scale) {
+	transition: $transition-duration ease-in-out;
+
+	&:hover,
+	&:focus {
+		transform: scale($focus-scale);
+	}
+
+	&:active {
+		opacity: $active-opacity;
+		transform: scale($active-scale);
+	}
+}
+
+@mixin disabled-focus-scale {
+	opacity: 1;
+	cursor: default;
+
+	&:hover,
+	&:focus {
+		transform: translate(0);
+	}
+
+	&:active {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@mixin disabled-focus-opacity {
+	opacity: 1;
+	cursor: default;
+
+	&:active,
+	&:hover,
+	&:focus {
+		opacity: 1;
+	}
+}
+
+@mixin focus-color($color: $color-white) {
+	transition: color $transition-duration ease-in-out, opacity $transition-duration ease-in-out;
+
+	&:hover,
+	&:focus {
+		color: $color;
+	}
+}
+
+@mixin focus-fill($fill: $color-black) {
+	@include active-opacity;
+	transition: fill $transition-duration ease-in-out, opacity $transition-duration ease-in-out;
+
+	&:hover,
+	&:focus {
+		fill: $fill;
+	}
+}
+
+@mixin focus-background($color: $color-background-hover) {
+	@include hover {
+		background-color: $color;
+	}
+	transition: all $transition-duration ease-in-out;
+
+	&:active {
+		opacity: 0.75;
+		color: $color-green-focus;
+	}
+}
+
+/* Before & after */
+@mixin before {
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		@content;
+	}
+}
+
+@mixin after {
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		@content;
+	}
+}
+
+@mixin before-after {
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		@content;
+	}
+}
+
+@mixin before-clean {
+	&::before {
+		@content;
+	}
+}
+
+@mixin after-clean {
+	&::after {
+		@content;
+	}
+}
+
+@mixin before-after-clean {
+	&::before,
+	&::after {
+		@content;
+	}
+}
+
+@mixin before-after-active {
+	&:active::before,
+	&:active::after {
+		@content;
+	}
+}
+
+@mixin before-active {
+	&:active::before {
+		@content;
+	}
+}
+
+@mixin after-active {
+	&:active::after {
+		@content;
+	}
+}
+
+@mixin before-after-hover {
+	&:hover::before,
+	&:focus::before,
+	&:hover::after,
+	&:focus::after {
+		@content;
+	}
+}
+
+@mixin before-hover {
+	&:hover::before,
+	&:focus::before {
+		@content;
+	}
+}
+
+@mixin after-hover {
+	&:hover::after,
+	&:focus::before {
+		@content;
+	}
+}
+
+/* Placeholder */
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin placeholder-focus {
+	&:focus::-webkit-input-placeholder {
+		opacity: 0;
+		transition: 0.2s ease;
+	}
+
+	&:focus:-moz-placeholder {
+		opacity: 0;
+		transition: 0.2s ease;
+	}
+
+	&:focus::-moz-placeholder {
+		opacity: 0;
+		transition: 0.2s ease;
+	}
+
+	&:focus:-ms-input-placeholder {
+		opacity: 0;
+		transition: 0.2s ease;
+	}
+}

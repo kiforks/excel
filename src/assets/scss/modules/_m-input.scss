@@ -1,0 +1,9 @@
+.m-input {
+	@include reset-input;
+
+	@include placeholder {
+		color: $color-gray-header;
+	}
+	color: $color-gray-header;
+	font-size: 18px;
+}

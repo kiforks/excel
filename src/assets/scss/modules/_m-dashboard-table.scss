@@ -1,0 +1,77 @@
+.m-dashboard-table {
+	.header {
+		@include center-flex;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		width: 100%;
+		height: $height-dashboard-header;
+		background-color: $color-white;
+		box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+	}
+
+	.new {
+		margin-top: $height-dashboard-header;
+		margin-bottom: 10px;
+		padding: 1.5rem;
+		background-color: $color-gray-db;
+	}
+
+	.create {
+		@include center-flex;
+
+		@include hover {
+			border-color: $color-green-focus;
+			color: $color-green-focus;
+			cursor: pointer;
+		}
+		width: 160px;
+		height: 160px;
+		border: 1px solid $color-gray-db;
+		border-radius: 4px;
+		background-color: $color-white;
+		color: $color-black;
+		font-size: 1.5rem;
+		text-align: center;
+		transition: all 0.3s ease;
+	}
+
+	.view {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.list-header {
+		@include flex-between;
+		margin-bottom: 10px;
+		padding: 0 12px;
+		color: $color-black-db;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.list {
+		@include reset-list;
+	}
+
+	.record {
+		@include flex-between;
+
+		@include hover {
+			border-radius: 25px;
+			background-color: $color-gray-db-bg;
+		}
+		align-items: center;
+		margin-bottom: 10px;
+		padding: 12px 14px 12px 16px;
+
+		a {
+			@include hover {
+				text-decoration: underline;
+			}
+			font-size: 14px;
+			cursor: pointer;
+		}
+	}
+}

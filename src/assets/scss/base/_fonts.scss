@@ -1,0 +1,20 @@
+/*
+*  param: font-name, font-path, font-weight, font-style
+* ____________________
+*  Example:
+*  @include font-face('OpenSans', '../fonts/OpenSans', bold, normal);
+*/
+
+/** Roboto **/
+@include font-face($font-family-roboto, '../fonts/Roboto-Thin', 100);
+@include font-face($font-family-roboto, '../fonts/Roboto-ThinItalic', 100, italic);
+@include font-face($font-family-roboto, '../fonts/Roboto-Light', 300);
+@include font-face($font-family-roboto, '../fonts/Roboto-LightItalic', 300, italic);
+@include font-face($font-family-roboto, '../fonts/Roboto-Regular', 400);
+@include font-face($font-family-roboto, '../fonts/Roboto-Medium', 500);
+@include font-face($font-family-roboto, '../fonts/Roboto-MediumItalic', 500, italic);
+@include font-face($font-family-roboto, '../fonts/Roboto-Bold', 700);
+@include font-face($font-family-roboto, '../fonts/Roboto-BoldItalic', 700, italic);
+@include font-face($font-family-roboto, '../fonts/Roboto-Black', 800);
+@include font-face($font-family-roboto, '../fonts/Roboto-BlackItalic', 800, italic);
+@include font-face($font-family-material-icons, '../fonts/MaterialIcons-Regular');
